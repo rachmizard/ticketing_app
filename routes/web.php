@@ -62,7 +62,10 @@ Route::middleware('auth', 'web')->group(function(){
 		Route::post('/profile/update', 'ProfileController@update');
 		Route::get('validate-customer', 'ValidationCustomerController@index')->name('validation.customer');
 		Route::post('validate-customer/validate', 'ValidationCustomerController@store')->name('validate');
+		Route::get('pesan-tiket/{id}', 'PesanTiketController@pesanTiket')->name('pesan.tiket');
+		Route::post('konfirmasi-tiket', 'PesanTiketController@konfirmasi');
 	});
 
 
 });
+

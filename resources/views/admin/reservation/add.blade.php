@@ -14,10 +14,6 @@
             <input type="text" name="reservation_code" class="form-control" id="reservation_code" placeholder="Reservation code" value="{{ rand() }}" data-required="true">
           </div>
           <div class="form-group">
-            <label for="reservation_at">Reservation At</label>
-            <input type="text" class="form-control" id="reservation_at" name="reservation_at" placeholder="Reservation at" data-required="true">
-          </div>
-          <div class="form-group">
             <label for="reservation_date">Reservation Date</label>
             <input type="date" id="reservation_date" class="form-control" id="reservation_date" name="reservation_date" placeholder="Reservation Date" data-required="true">
           </div>            
@@ -42,15 +38,7 @@
                 <option value="{{$rute->id}}">{{$rute->rute_from}} to {{$rute->rute_to}}</option>
               @endforeach
             </select>
-          </div>
-          <div class="form-group">
-            <label for="depart_at">Depart At</label>
-            <input type="text" id="depart_at" class="form-control" id="depart_at" name="depart_at" placeholder="Depart At" data-required="true">
-          </div>
-          <div class="form-group">
-            <label for="price">Price</label>
-            <input type="number" id="price" class="form-control" id="price" name="price" placeholder="Price" data-required="true">
-          </div>        
+          </div>       
         <div class="form-group">
             <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Save changes</button>
         </div>

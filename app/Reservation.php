@@ -8,7 +8,7 @@ class Reservation extends Model
 {
     protected $table = 'reservations';
     protected $primaryKey = 'id';
-    protected $fillable = ['reservation_code', 'reservation_at', 'reservation_date', 'customer_id', 'seat_code', 'rute_id', 'depart_at', 'price', 'user_id',];
+    protected $fillable = ['reservation_code', 'reservation_date', 'customer_id', 'seat_code', 'rute_id', 'user_id',];
 
     public function customers()
     {

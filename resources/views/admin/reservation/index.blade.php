@@ -39,11 +39,10 @@
                                 </th>
                                 @endif
                                 <th>No</th>
-                                <th>Reservation Code</th>
-                                <th>Reservation At</th>
-                                <th>Customer Name</th>
+                                <th>Kode reservasi</th>
+                                <th>Tanggal reservasi</th>
+                                <th>Nama Customer</th>
                                 <th>Rute</th>
-                                <th>Price</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -63,12 +62,11 @@
                                 </td>
                                 <td>{{ $no }}</td>
                                 <td>{{ $c->reservation_code }}</td>
-                                <td>{{ $c->reservation_at }}</td>
+                                <td>{{ $c->reservation_date }}</td>
                                 <td>{{ $c->customers['name'] }}</td>
                                 <td>
                                     <a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#showrute{{ $c->rute_id }}">{{ $c->rutes['rute_from']}} ke {{ $c->rutes['rute_to']}}</a>
                                 </td>
-                                <td>{{ $c->price }}</td>
                                 <td>
                                     <div class="btn-group">
                                         <a href="{{ URL::to('/admin/reservation/' . $c->id) }}" class="btn btn-primary btn-sm"><i class="fa fa-search"></i></a>

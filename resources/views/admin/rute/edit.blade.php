@@ -11,15 +11,15 @@
         <form action="/admin/rute/{{ $edit->id }}" method="POST">
             {{ csrf_field() }}
           <div class="form-group has-success">
-            <label for="depart_at">Turun Di</label>
-            <input type="text" name="depart_at" class="form-control" id="depart_at" placeholder="Ketik disini..." value="{{ $edit->depart_at }}">
+            <label for="depart_at">Berangkat pada</label>
+            <input type="date" name="depart_at" class="form-control" id="depart_at" placeholder="Ketik disini..." value="{{ $edit->depart_at }}">
           </div>
           <div class="form-group has-success">
-            <label for="rute_from">Rute Dari</label>
+            <label for="rute_from">Rute dari</label>
             <input type="text" class="form-control" id="rute_from" name="rute_from" placeholder="Ketik disini..." value="{{ $edit->rute_from }}">
           </div>
           <div class="form-group has-success">
-            <label for="rute_to">Rute Ke</label>
+            <label for="rute_to">Rute ke</label>
             <input type="text" id="rute_to" class="form-control" id="rute_to" name="rute_to" placeholder="Ketik disini..." value="{{ $edit->rute_to }}">
           </div>            
           <div class="form-group has-success">

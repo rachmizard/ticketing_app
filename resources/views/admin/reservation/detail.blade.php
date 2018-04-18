@@ -28,10 +28,6 @@
                           <td>{{ $detail->reservation_code }}</td>
                         </tr>
                         <tr>
-                          <th>Reservasi Ke</th>
-                          <td>{{ $detail->reservation_at }}</td>
-                        </tr>
-                        <tr>
                           <th>Tanggal Reservasi</th>
                           <td>{{ $detail->reservation_date }}</td>
                         </tr>
@@ -44,11 +40,7 @@
                           <td>{{ $detail->rutes['rute_from'] }} ke {{ $detail->rutes['rute_to'] }}</td>
                         </tr>
                         <tr>
-                          <th>Harga</th>
-                          <td>{{ $detail->price }}</td>
-                        </tr>
-                        <tr>
-                          <th>Staff</th>
+                          <th>Pemesan</th>
                           <td>{{ $detail->users['name'] }}</td>
                         </tr>
                       </tbody>

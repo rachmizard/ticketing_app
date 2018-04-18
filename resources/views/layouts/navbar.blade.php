@@ -3,7 +3,7 @@
                 <nav class="nav-primary hidden-xs">
                   <ul class="nav">
                     <li >
-                      <a href="home"  >
+                      <a href="/admin/home"  >
                         <i class="fa fa-dashboard icon">
                           <b class="bg-danger"></b>
                         </i>
@@ -113,7 +113,7 @@
                 <nav class="nav-primary hidden-xs">
                   <ul class="nav">
                     <li >
-                      <a href="home"  >
+                      <a href="/user/home"  >
                         <i class="fa fa-dashboard icon">
                           <b class="bg-danger"></b>
                         </i>

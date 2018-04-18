@@ -105,7 +105,7 @@
                             <td>{{ $in->rute_to }}</td>
                             <td>
                               <div class="form-group">
-                              <a href="pesan-tiket/{{ $in->rute_from }}-{{ $in->rute_to }}/{{ $in->id }}" class="btn btn-sm btn-rounded btn-info"><i class="fa fa-ticket"></i> Pesan tiket</a>
+                              <a href="pesan-tiket/{{ $in->id }}" class="btn btn-sm btn-rounded btn-info"><i class="fa fa-ticket"></i> Pesan tiket</a>
                               <a data-toggle="modal" data-target="#showticket{{$in->id}}" class="btn btn-sm btn-rounded btn-danger"><i class="fa fa-eye"></i> Rincian tiket</a>
                               </div>
                             </td>

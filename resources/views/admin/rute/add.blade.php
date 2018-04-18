@@ -10,15 +10,15 @@
         <form action="/admin/rute" method="POST">
             {{ csrf_field() }}
           <div class="form-group">
-            <label for="depart_at">Turun Di</label>
-            <input type="text" name="depart_at" class="form-control" id="depart_at" placeholder="Ketik disini...">
+            <label for="depart_at">Berangkat pada</label>
+            <input type="date" name="depart_at" class="form-control" id="depart_at" placeholder="Ketik disini...">
           </div>
           <div class="form-group">
-            <label for="rute_from">Rute Dari</label>
+            <label for="rute_from">Rute dari</label>
             <input type="text" class="form-control" id="rute_from" name="rute_from" placeholder="Ketik disini...">
           </div>
           <div class="form-group">
-            <label for="rute_to">Rute Ke</label>
+            <label for="rute_to">Rute ke</label>
             <input type="text" id="rute_to" class="form-control" id="rute_to" name="rute_to" placeholder="Ketik disini...">
           </div>            
           <div class="form-group">
